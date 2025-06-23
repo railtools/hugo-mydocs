@@ -5,7 +5,6 @@ title = 'Hugo Book'
 
 # Book configuration
 disablePathToLower = true
-enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes
 [markup]
