@@ -1,11 +1,10 @@
 # 📚 Hugo Docs – Railway Template
 
-A minimal Hugo documentation site using the [Hugo Book theme](https://github.com/alex-shpak/hugo-book), deployed on [Railway](https://railway.app) with [Nixpacks](https://nixpacks.com) for zero-config setup.
+A minimal Hugo documentation site using the [Hugo Book theme](https://github.com/alex-shpak/hugo-book), deployed on [Railway](https://railway.app), built with a small multi-stage `Dockerfile`.
 
 ## 🌐 Features
 
-- ✅ Instant deployment with Hugo pre-installed (via Nixpacks)
-- ✅ No Dockerfile required
+- ✅ Instant deployment with a pinned Hugo Extended version (set `HUGO_VERSION` in the `Dockerfile`)
 - 🌍 Dynamic `baseURL` from Railway's public URL
 - 📖 [Hugo Book theme](https://github.com/alex-shpak/hugo-book) via Hugo Modules
 - 🗂️ Automatic tree-structured navigation from content
@@ -21,7 +20,7 @@ A minimal Hugo documentation site using the [Hugo Book theme](https://github.com
 
 ## 👋 Notes
 
-- Hugo is installed dynamically using Nixpacks — no manual install or image needed.
+- The `Dockerfile` downloads Hugo Extended (with Go and Git for Hugo Modules) and builds the site; the final image only contains Caddy and the generated files.
 - Caddy serves your production-ready static files from the `public/` folder.
 - The [Hugo Book theme](https://github.com/alex-shpak/hugo-book) is loaded via Hugo Modules — clean documentation layout out of the box.
 - Content in `content/docs/` automatically generates navigation menu based on folder structure.

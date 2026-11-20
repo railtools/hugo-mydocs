@@ -13,4 +13,8 @@ Section renders pages in section as definition list, using title and description
 {{</* section [summary] */>}}
 ```
 
-{{<section summary>}}
+> [!WARNING]
+> The `section` shortcode is deprecated by the theme and will be removed. Link child pages directly instead:
+
+- [First page]({{< relref "first-page" >}})
+- [Second Page]({{< relref "second-page" >}})

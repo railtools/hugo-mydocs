@@ -1,32 +1,29 @@
 # Hints
 
-Hint shortcode can be used as hint/alerts/notification block.  
-There are 3 colors to choose: `info`, `warning` and `danger`.
+Hints are rendered from standard GitHub-style markdown alerts.  
+Supported types: `NOTE`, `TIP`, `IMPORTANT`, `WARNING` and `CAUTION`.
+(The older `{{%/* hint */%}}` shortcode is deprecated by the theme.)
 
-```tpl
-{{%/* hint [info|warning|danger] */%}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{%/* /hint */%}}
+```markdown
+> [!NOTE]
+> **Markdown content**  
+> Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+> stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 ```
 
 ## Example
 
-{{% hint info %}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{% /hint %}}
+> [!NOTE]
+> **Markdown content**  
+> Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+> stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 
-{{% hint warning %}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{% /hint %}}
+> [!WARNING]
+> **Markdown content**  
+> Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+> stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 
-{{% hint danger %}}
-**Markdown content**  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{% /hint %}}
+> [!CAUTION]
+> **Markdown content**  
+> Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+> stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
